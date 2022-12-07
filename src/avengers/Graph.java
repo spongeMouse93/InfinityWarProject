@@ -1,6 +1,6 @@
 package avengers;
 
-import java.util.*;
+import java.util.LinkedList;
 
 public class Graph {
     private int vertices;
