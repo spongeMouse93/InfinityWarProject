@@ -7,7 +7,7 @@ public class LocateTitan{
   public static void main(String[] args){
     Scanner sc = new Scanner(System.in);
     PrintWriter out = new PrintWriter(System.out);
-    if (args.length < 2){
+    if (args.length != 2){
       System.out.println("Execute: java LocateTitan <INput file> <OUTput file>");
       return;
     }
