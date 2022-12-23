@@ -5,7 +5,7 @@ import java.io.*;
 
 public class ForgeStormBreaker{
   public static void main(String[] args){
-    if (args.length < 2){
+    if (args.length != 2){
       System.out.println("Execute: java ForgeStormBreaker <INput file> <OUTput file>");
       return;
     }
