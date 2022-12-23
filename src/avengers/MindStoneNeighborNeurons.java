@@ -5,7 +5,7 @@ import java.io.*;
 
 public class MindStoneNeighborNeurons{
   public static void main(String[] args){
-    if (args.length < 2){
+    if (args.length != 2){
       System.out.println("Execute: java MindStoneNeighborNeurons <INput file> <OUTput file>");
       return;
     }
