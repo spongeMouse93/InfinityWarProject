@@ -27,9 +27,9 @@ public class ForgeStormBreaker{
         e2.printStackTrace();
       }
     }
-    int flux = 0, r = sc.nextInt(), c = sc.nextInt();
-    for (int i = 0; i < r; i++)
-      for (int j = 0; j < c; j++)
+    int flux = 0;
+    for (int i = 0; i < sc.nextInt(); i++)
+      for (int j = 0; j < sc.nextInt(); j++)
         flux += sc.nextInt();
     out.println(flux);
     out.flush();
