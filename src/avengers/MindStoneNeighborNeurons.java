@@ -31,7 +31,6 @@ public class MindStoneNeighborNeurons{
     String[] neurons = new String[numNeurons];
     for (int i = 0; i < numNeurons; i++)
       neurons[i] = sc.next();
-    String central = neurons[neurons.length - 1];
     int numSynapses = sc.nextInt();
     String[] synapses1 = new String[numSynapses], synapses2 = new String[numSynapses];
     for (int i = 0; i < numSynapses; i++){
@@ -39,7 +38,7 @@ public class MindStoneNeighborNeurons{
       synapses[i] = sc.next();
     }
     for (int i = 0; i < numSynapses; i++)
-      if (synapses2[i].equals(central)){
+      if (synapses2[i].equals(neurons[neurons.length - 1])){
         out.println(synapses1[i]);
         out.flush();
       }
