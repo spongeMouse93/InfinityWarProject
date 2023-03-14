@@ -31,7 +31,7 @@ public class ForgeStormBreaker{
     for (int i = 0; i < r; i++)
       for (int j = 0; j < c; j++)
         flux += sc.nextInt();
-    out.println(flux);
+    out.printf("%d\n", flux);
     out.flush();
   }
 }
