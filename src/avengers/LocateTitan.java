@@ -39,7 +39,7 @@ public class LocateTitan{
     int[][] adjancency = new int[numGenerators][numGenerators];
     for (int i = 0; i < numGenerators; i++)
       for (int j = 0; j < numGenerators; j++){
-        double x = adjancency[i][j] / (functionalities[i] * functionalities[j]);
+        double x = sc.nextInt() / (functionalities[i] * functionalities[j]);
         adjacency[i][j] = (int) x;
       }
     for (int i = 0; i < numGenerators; i++){
