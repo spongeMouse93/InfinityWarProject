@@ -8,14 +8,15 @@ public class LocateTitan{
     Scanner sc = new Scanner(System.in);
     PrintWriter out = new PrintWriter(System.out);
     if (args.length != 2){
-      System.out.println("Execute: java LocateTitan <INput file> <OUTput file>");
+      System.err.println("Execute: java LocateTitan <INput file> <OUTput file>");
       return;
     }
     try{
       sc = new Scanner(new File(args[0]), "UTF-8");
       sc.useLocale(Locale.US);
     }catch (IOException e){
-      e.printStackTrace();
+      System.err.println("Could not find input file.");
+      return;
     }
     try{
       out = new PrintWriter(new FileOutputStream(new File(args[1])), true);
