@@ -6,14 +6,15 @@ import java.io.*;
 public class MindStoneNeighborNeurons{
   public static void main(String[] args){
     if (args.length != 2){
-      System.out.println("Execute: java MindStoneNeighborNeurons <INput file> <OUTput file>");
+      System.err.println("Execute: java MindStoneNeighborNeurons <INput file> <OUTput file>");
       return;
     }
     Scanner sc = new Scanner(System.in);
     try{
       sc = new Scanner(new File(args[0]), "UTF-8");
     }catch (IOException e){
-      e.printStackTrace();
+      System.err.println("Could not find input file.");
+      return;
     }
     PrintWriter out = new PrintWriter(System.out);
     try{
