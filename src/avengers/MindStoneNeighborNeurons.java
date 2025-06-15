@@ -35,8 +35,8 @@ public class MindStoneNeighborNeurons{
     int numSynapses = sc.nextInt();
     String[] synapses1 = new String[numSynapses], synapses2 = new String[numSynapses];
     for (int i = 0; i < numSynapses; i++){
-      synapses[i] = sc.next();
-      synapses[i] = sc.next();
+      synapses1[i] = sc.next();
+      synapses2[i] = sc.next();
     }
     for (int i = 0; i < numSynapses; i++)
       if (synapses2[i].equals(neurons[neurons.length - 1])){
