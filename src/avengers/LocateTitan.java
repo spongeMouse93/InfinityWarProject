@@ -2,6 +2,7 @@ package avengers;
 
 import java.util.*;
 import java.io.*;
+import java.nio.charsets.StandardCharsets;
 
 public class LocateTitan{
   public static void main(String[] args){
@@ -12,7 +13,7 @@ public class LocateTitan{
       return;
     }
     try{
-      sc = new Scanner(new File(args[0]), "UTF-8");
+      sc = new Scanner(new File(args[0]), StandardCharsets.UTF_8);
       sc.useLocale(Locale.US);
     }catch (IOException e){
       System.err.println("Could not find input file.");
