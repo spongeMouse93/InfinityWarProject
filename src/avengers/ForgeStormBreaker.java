@@ -14,6 +14,7 @@ public class ForgeStormBreaker{
     PrintWriter out = new PrintWriter(System.out);
     try{
       sc = new Scanner(new File(args[0]), StandardCharsets.UTF_8);
+      sc.useLocale(Locale.US);
     }catch (IOException e){
       System.err.println("Could not find input file.");
       return;
