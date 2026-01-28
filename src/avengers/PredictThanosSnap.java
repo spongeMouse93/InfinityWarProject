@@ -2,6 +2,7 @@ package avengers;
 
 import java.util.*;
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 
 public class PredictThanosSnap{
   public static void main(String[] args){
@@ -12,7 +13,7 @@ public class PredictThanosSnap{
     Scanner sc = new Scanner(System.in);
     PrintWriter out = new PrintWriter(System.out);
     try{
-      sc = new Scanner(new File(args[0]), "UTF-8");
+      sc = new Scanner(new File(args[0]), StandardCharsets.UTF_8);
       sc.useLocale(Locale.US);
     }catch (IOException e){
       System.err.println("Could not find input file.");
